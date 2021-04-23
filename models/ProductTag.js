@@ -15,7 +15,7 @@ ProductTag.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'product_id', //check capital first letter
+        model: 'product', 
         key: 'id',
         unique: false
       }
@@ -23,7 +23,7 @@ ProductTag.init(
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'tag_id', //check capital first letter
+        model: 'tag',
         key: 'id',
         unique: false
       }
